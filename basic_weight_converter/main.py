@@ -11,4 +11,4 @@ else:
     print(f"{unit} is not valid.")
     exit()
 
-print(f"You weigh {round(weight, 2)} {unit}.")
+print(f"You weigh {weight:.02f} {unit}.")
