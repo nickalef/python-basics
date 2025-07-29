@@ -17,6 +17,5 @@ while time_years <= 0:
     if time_years <= 0:
         print("Time can't be less than or equal to zero. Try again.")
 
-print(principle)
-print(interest_rate)
-print(time_years)
+balance = principle * pow((1 + interest_rate / 100), time_years)
+print(f"Balance after {time_years} year/s at an interest rate of {interest_rate}%: ${balance:.2f}!")
