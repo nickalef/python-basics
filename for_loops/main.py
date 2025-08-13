@@ -1,4 +1,4 @@
-"""import random
+import random
 
 list_one = [1, 2, 3, 4, 5]
 count = len(list_one)
@@ -22,9 +22,17 @@ for index in range(count):
     print(f"index: {index}")
     for index2 in range(count):
         print(f"nested index: {index}")
-        print(f"nested index2: {index2}")"""
+        print(f"nested index2: {index2}")
 
 for j in range(3):
     for i in range(1, 10):
         print(i, end="")
+    print()
+
+rows = int(input("Enter the number of rows you want the rectangle to have: "))
+cols = int(input("Same with columns: "))
+
+for i in range(rows):
+    for j in range(cols):
+        print("*", end="")
     print()
