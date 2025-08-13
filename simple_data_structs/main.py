@@ -1,26 +1,7 @@
-fruits = ["apple", "orange", "banana", "coconut"]
-veggies = ("carrot", "broccoli", "potato")
+fruits = ["apple", "orange", "banana", "coconut"] # list
+veggies = ("carrot", "broccoli", "potato") # tuple
+roots = {"turnips", "beetroot", True, 1, "parsnips"} # set. Note: set does not print out both 1 and True, seems to consider them the same. Seems to also print whichever comes first in the sequence and removes the other.
 
-
-print(len(fruits))
-print("apple" in fruits) # Boolean result
-print(fruits.index("apple")) # int result
-fruits[1] = "pineapple" # reassignment
 print(fruits)
-
-fruits.append("strawberry")
-print(fruits)
-fruits.remove("banana")
-print(fruits)
-fruits.insert(2, "potato")
-print(fruits)
-fruits.extend(veggies) # So this actually goes through an iterable and adds them to the list.
-print(fruits)
-fruits.insert(len(fruits), veggies) # This just shoves the tuple into the list.
-print(fruits)
-fruits.append(veggies) # does the same thing as insert.
-print(fruits)
-fruits.remove(veggies)
-fruits.remove(veggies)
-fruits.sort() # does not work with things like tuples only strings
-print(fruits)
+print(veggies)
+print(roots)
