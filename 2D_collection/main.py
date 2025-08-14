@@ -18,4 +18,4 @@ for collection in groceries: # In a 2D collection first for loop prints the coll
 # So the nested for loop behaves the same like when you have a range. The first collection is like index 0 (even though it is a list). Then the nested part is like "ok we have seperated the list from the 2D collection. Loop through that list." 
 
 # OR can do below to make 2D
-#groceries = [["apple", "orange", "banana", "coconut"], ["celery", "carrots", "potatoes"], ["chicken", "fish", "turkey"]]
+groceries = [["apple", "orange", "banana", "coconut"], ["celery", "carrots", "potatoes"], ["chicken", "fish", "turkey"]]
