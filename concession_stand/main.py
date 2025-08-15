@@ -17,12 +17,15 @@ for item, price in menu.items():
 
 while True:
     user_item = input("Enter the name of the item you would like to add to your cart from the menu (q to quit): ").lower()
-    
+        
     if user_item == "q":
         break
-    
-    cart.append(user_item)
-    total += menu.get(user_item)
+    elif menu.get(user_item) is not None:
+        cart.append(user_item)
+        total += menu.get(user_item)
+    else:
+        print("Food not on menu. Pick something else.")
+        
 
 print("-------------- YOUR CART --------------")
 for item in cart:
